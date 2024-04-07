@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        // const name = "Benny";
+        // name = "Dani";
+
+        // console.log(name)
+
+        // const x = 5, y = 10;
+        // let z = 0;
+
+        // z = x + y;
+
+        // console.log(z)
+        // const x = 50
+        // console.log(x)
+        // x = "beni"
+        // console.log(x)
+
+        // let name = 50
+        // name += 50
+        // console.log(name)
+
+        // function printString() {
+        //     console.log("I am a text")
+        // }
+        // printString();
+        // printString();
+        // printString();
+        // printString();
+        // printString();
+
+        // function printParameter(param) {
+        //     console.log(param)
+        // }
+
+        // printParameter(20)
+        // printParameter('beni')
+        // printParameter('20')
+        // printParameter(20124)
+
+        // function returnSumOfTwoParams(param1, param2) {
+        //     return param1 + param2;
+        // }
+        // let number;
+        // //80
+        // returnSumOfTwoParams(50, 30) //return 80 but no one uses it 
+
+        // console.log(returnSumOfTwoParams(50, 30)) //return 80 and print it 
+        // // console.log(80) //same result 
+
+        // number = returnSumOfTwoParams(50, 30); //return 80 and assignint it to "number" variable
+        // console.log(number)
+
+
+        // function ifNumberPositive (num){
+        //     if(num >0){
+        //         return true;
+        //     }else{
+        //         return false;
+        //     }
+        // }
+
+        // let x = 50;
+
+        // console.log(ifNumberPositive(x))
+
+        // x -= 100; 
+
+        // console.log(ifNumberPositive(x))
+        // const isPoisitive = ifNumberPositive(x);
+        // console.log(isPoisitive)
+
+        // const personAge = 10;
+
+        // if (ifTeenager(personAge)) {
+        //     console.log('You cannot watch the movie because you are underage')
+        // } else {
+        //     console.log('Ok you bought the ticket')
+        // }
+
+        function ifTeenager(age) {
+            if (age <= 18) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+
+        // const ifTeenager = (age) => {
+        //     if (age <= 18) {
+        //         return true;
+        //     } else {
+        //         return false;
+        //     }
+        // }
+
+        // overage: 3
+
+
+        // console.log(myArray)
+
+
+        // ************************* ARRAYS ***********************
+        // let ages = [30, 31, 40, 50, 80, 70, 13, 1, 5, 0]; //underage: 2
+
+        // let underage = 0;
+        // let overage = 0;
+
+
+        // for (let i = 0; i < ages.length; i++) {
+        //     if (ifTeenager(ages[i])) {
+        //         underage++;
+        //     } else {
+        //         overage++;
+        //     }
+        // }
+
+        // ages.forEach((element) => {
+        //     console.log(element)
+        // })
+
+        // console.log('underage ', underage)
+        // console.log('overage ', overage)
+
+        // Targil kita
+        // create function that checks if age is over 18 (underage)
+        // Create array with ages
+        // print number of ages that is underage and overage
+
+
+        // const elements = ['Beni', "Sarah"];
+        // console.log(elements)
+        // elements.push('Dog')
+        // console.log(elements)
+        // elements.pop()
+        // elements.pop()
+        // console.log(elements)
+
+
+        // // const myFunction = (element, index) => {
+        // //     console.log(element)
+        // //     console.log(index)
+        // // }
+        // // elements.forEach(myFunction)
+
+
+        // elements.forEach((element, index) => {
+        //     console.log(element)
+        //     console.log(index)
+        // })
+
+
+        // for (const element of elements) { //for of if i want to iterate array  (use for in if you want to run over objects)
+        //     console.log(element)
+        // }
+
+
+        // OBJECTS
+
+        // const person1 = {
+        //     name: "Sarah",
+        //     age: 40,
+        //     address: { street: 'Mihashvili', country: 'Israel' },
+        //     friends: ['Jhon', "Arnold", "Beni", "Donald"]
+        // };
+        // const person2 = {
+        //     name: "Beni",
+        //     age: 35,
+        //     friends: ['Jhon', "Arnold"]
+        // };
+        // const person3 = {
+        //     name: "Dani",
+        //     age: 17
+        // };
+
+        // const persons = [person1, person2, person3]
+
+        const persons = [{
+            name: "Sarah",
+            age: 40,
+            address: { street: 'Mihashvili', country: 'Israel' },
+            friends: ['Jhon', "Arnold", "Beni", "Donald"]
+        },
+        {
+            name: "Beni",
+            age: 35,
+            address: { street: 'Mihashvili', country: 'Israel' },
+            friends: ['Jhon', "Arnold"]
+        },
+        {
+            name: "Dani",
+            address: { street: 'Mihashvili', country: 'Israel' },
+            age: 17
+        },
+    
+        {
+            name: "Bobi",
+            age: 17
+        }
+    
+    ]
+
+        for (const person of persons) {
+            // if(person.address && person.address.street){
+            //     console.log(person.address.street)
+            // }
+            
+            console.log(person?.address?.street)
+        }
+
+        console.log('end of programm')
+
+       
+
+        // console.log(person)
+        // console.log(person.name) //name
+        // console.log(person.friends.length) //count of friends
+
+        // for (const person of persons) {
+        //     if (ifTeenager(person.age)) {
+        //         console.log('person')
+        //     }
+        // }
+
+
+
+    </script>
+</body>
+
+</html>
